@@ -1,0 +1,8 @@
+CREATE database tchat;
+
+CREATE TABLE chat (
+    id_chat INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    pseudo VARCHAR(50) NOT NULL UNIQUE,
+    `message` VARCHAR(255) NOT NULL,
+    CONSTRAINT pk_chat PRIMARY KEY (id_chat)
+) ENGINE = InnoDB CHARACTER SET utf8;
